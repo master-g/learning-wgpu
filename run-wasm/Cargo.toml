@@ -1,0 +1,10 @@
+[package]
+name = "run-wasm"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cargo-run-wasm = { version = "0.4.0" }
+fs_extra.workspace = true
+
