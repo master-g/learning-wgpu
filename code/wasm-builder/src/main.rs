@@ -13,7 +13,7 @@ struct WasmTarget {
 fn main() -> anyhow::Result<()> {
 	env_logger::init();
 
-	let input = match std::env::args().skip(1).next() {
+	let input = match std::env::args().nth(1) {
 		Some(s) => s,
 		None => {
 			log::info!("No input file supplied");
