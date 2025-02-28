@@ -1,6 +1,11 @@
 [workspace]
 resolver = "3"
-members = ["code/beginner/*", "code/utils", "run-wasm"]
+members = [
+  "code/beginner/*",
+  "code/integration-and-debugging/*",
+  "code/utils",
+  "run-wasm",
+]
 
 [workspace.package]
 edition = "2024"

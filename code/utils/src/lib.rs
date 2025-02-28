@@ -1,3 +1,6 @@
+pub mod framework;
+pub use framework::{WgpuAppAction, run};
+
 pub fn init_logger() {
 	cfg_if::cfg_if! {
 		if #[cfg(target_arch = "wasm32")] {

@@ -16,3 +16,12 @@
 /.cargo
 /temp
 /.data
+
+node_modules/
+wasm/
+*.wasm
+*.js
+
+**/public/assets/
+
+/docs/public/wasm/*

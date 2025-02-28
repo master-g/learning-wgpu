@@ -24,7 +24,7 @@ glam.workspace = true
 log.workspace = true
 rand = "0.9.0"
 # https://github.com/rust-random/rand/blob/585b29f2a9b21170c56fc9a0e29cff664491561c/README.md?plain=1#L113
-getrandom = { version = "0.3.1", features = ["js"] }
+getrandom = { version = "0.3.1", features = ["wasm_js"] }
 utils.workspace = true
 wgpu.workspace = true
 
