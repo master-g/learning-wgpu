@@ -49,19 +49,23 @@ pub fn run() {
 			Event::WindowEvent {
 				ref event,
 				window_id,
-			} if window_id == window.id() => match event {
-				WindowEvent::CloseRequested
-				| WindowEvent::KeyboardInput {
-					event:
-						KeyEvent {
-							state: ElementState::Pressed,
-							physical_key: PhysicalKey::Code(KeyCode::Escape),
+			} => {
+				if window_id == window.id() {
+					match event {
+						WindowEvent::CloseRequested
+						| WindowEvent::KeyboardInput {
+							event:
+								KeyEvent {
+									state: ElementState::Pressed,
+									physical_key: PhysicalKey::Code(KeyCode::Escape),
+									..
+								},
 							..
-						},
-					..
-				} => control_flow.exit(),
-				_ => {}
-			},
+						} => control_flow.exit(),
+						_ => {}
+					}
+				}
+			}
 			_ => {}
 		})
 		.unwrap();
