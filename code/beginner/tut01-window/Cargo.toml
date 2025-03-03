@@ -16,6 +16,7 @@ cfg-if.workspace = true
 winit.workspace = true
 env_logger.workspace = true
 log.workspace = true
+parking_lot.workspace = true
 pollster.workspace = true
 wgpu.workspace = true
 

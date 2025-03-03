@@ -1894,6 +1894,7 @@ dependencies = [
  "console_log",
  "env_logger",
  "log",
+ "parking_lot",
  "pollster",
  "wasm-bindgen",
  "wasm-bindgen-futures",
