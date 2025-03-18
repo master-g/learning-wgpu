@@ -9,6 +9,7 @@ reorder_imports = true
 reorder_modules = true
 use_field_init_shorthand = true
 use_small_heuristics = "Off"
+newline_style = "Unix"
 
 # -----------------------------------
 # Unstable options we would like to use in future
